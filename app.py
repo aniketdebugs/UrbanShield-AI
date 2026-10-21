@@ -137,7 +137,7 @@ with tabs[0]:
     if view[["latitude", "longitude"]].drop_duplicates().shape[0] > 1:
         # Real OpenStreetMap street tiles centered on Indore. The basemap is real;
         # the heat values remain demo values unless a validated Landsat dataset is loaded.
-        fig = px.scatter_mapbox(
+        fig = px.scatter_map(
             view, lat="latitude", lon="longitude", color="lst_c",
             hover_name="cell_id", hover_data=["lst_c", "ndvi", "ndbi"],
             color_continuous_scale="Inferno", zoom=11, height=600,
