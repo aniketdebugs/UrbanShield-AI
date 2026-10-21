@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 ROOT = Path(__file__).resolve().parent
-DEMO_PATH = ROOT / "Indore_demo_data.csv"
+DEMO_PATH = ROOT / "indore_demo_data.csv"
 REAL_DATA = ROOT / "data" / "processed" / "indore_heat.csv"
 MODEL_PATH = ROOT / "models" / "heat_model.joblib"
 META_PATH = ROOT / "models" / "metadata.json"
