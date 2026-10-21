@@ -141,12 +141,12 @@ with tabs[0]:
             view, lat="latitude", lon="longitude", color="lst_c",
             hover_name="cell_id", hover_data=["lst_c", "ndvi", "ndbi"],
             color_continuous_scale="Inferno", zoom=11, height=600,
-            mapbox_style="open-street-map",
+            map_style="open-street-map",
             center={"lat": 22.7196, "lon": 75.8577},
             title="Indore street map with heat-grid overlay"
         )
         fig.update_layout(
-            mapbox=dict(center={"lat": 22.7196, "lon": 75.8577}, zoom=11),
+            map=dict(center={"lat": 22.7196, "lon": 75.8577}, zoom=11),
             margin={"l": 0, "r": 0, "t": 55, "b": 0}
         )
         st.caption("Basemap: OpenStreetMap street geography around Indore. Heat-coloured points come from the currently loaded dataset; in DEMO MODE, their values are synthetic and are not real measured temperatures.")
