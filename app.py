@@ -314,6 +314,6 @@ with tabs[5]:
 - Landsat land-surface temperature is not the same as near-surface air temperature or personal heat exposure.
 """)
     st.download_button("Download currently loaded dataset CSV", data=df.to_csv(index=False).encode("utf-8"),
-                       file_name="urbanshield_loaded_dataset.csv", mime="text/csv")
+                       file_name="urbanshield_loaded_dataset.csv", mime="text/csv", key="download_loaded_dataset")
 
 st.caption("UrbanShield AI · Geospatial heat-screening prototype · Verify dataset provenance, validation, and intervention assumptions before real-world use.")
