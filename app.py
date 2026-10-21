@@ -287,7 +287,7 @@ with tabs[4]:
         st.markdown(f"**Why this cell ranks here:** its relative temperature indicator is {item['Temperature indicator']:.2f}, built-up indicator is {item['Built-up indicator']:.2f}, and low-green indicator is {item['Low-green indicator']:.2f}.")
         st.caption("The score is a transparent weighted screening heuristic, not a learned probability, validated risk score, or estimate of health outcomes.")
     csv = df.to_csv(index=False).encode("utf-8")
-    st.download_button("Download currently loaded dataset CSV", data=csv, file_name="urbanshield_loaded_dataset.csv", mime="text/csv")
+    st.download_button("Download currently loaded dataset CSV", data=csv, file_name="urbanshield_loaded_dataset.csv", mime="text/csv",key="download_loaded_dataset")
 
 with tabs[5]:
     st.subheader("Methodology and limitations")
